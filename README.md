@@ -33,3 +33,23 @@ userStore.onchange(function(data){
 
 userStore.set('name','kva')
 ```
+
+# Slot
+
+```
+render :
+<Welcome>
+    <slot name="kyo"><div>kva</div></slot>
+    <slot name="kyo2"><div>hello</div> <div>world</div></slot>
+</Welcome>
+
+in component :
+render() {
+    return (
+        <div>
+            {this.props.kyo}
+            {this.props.kyo2}
+        </div>
+    )
+}
+```
