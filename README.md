@@ -33,6 +33,7 @@ userStore.onchange(function(data){
 })
 
 userStore.set('name','kva')
+userStore.get('name')
 ```
 
 # Slot
