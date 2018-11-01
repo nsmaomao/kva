@@ -21,6 +21,18 @@ class Welcome extends Component {
 }
 ```
 
+## Render
+```
+html : 
+<div id="app"></div>
+
+js :
+render(
+    <Welcome />,
+    document.getElementById('app')
+)
+```
+
 ## Store
 
 ```
@@ -39,13 +51,13 @@ userStore.get('name')
 # Slot
 
 ```
-render :
+jsx:
 <Welcome>
     <slot name="kyo"><div>kva</div></slot>
     <slot name="kyo2"><div>hello</div> <div>world</div></slot>
 </Welcome>
 
-in component :
+render :
 render() {
     return (
         <div>
