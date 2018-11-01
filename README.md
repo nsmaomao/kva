@@ -4,6 +4,7 @@ A simple javascript framework, like react & vue.
 ## Getting started
 
 ```
+npm install kva --save
 import { h, Component, render, Store } from './kva'
 ```
 
